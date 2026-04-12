@@ -1,27 +1,27 @@
-# 🌙 Dream Analyzer
+#  Dream Analyzer
 
 > An NLP-based web application where users can describe their dreams and an ensemble model classifies them according to the emotion associated with the dream.
 
 ---
 
-## 📖 Problem Statement / Motivation
+##  Problem Statement / Motivation
 
-Dreams can carry strong emotional signals, yet interpreting those signals is subjective and time-consuming. Dream Analyzer automates that process: users write a free-text description of their dream, and a trained ensemble of NLP models predicts the underlying emotion (e.g., *happy*, *sad*, *neutral*, *nightmare*). The app also maintains a personal dream journal, surfaces trend analytics over time, and plays ambient music that matches the detected mood — turning dream exploration into a rich, interactive experience.
-
----
-
-## ✨ Key Features
-
-- **Emotion classification** — ensemble of Naive Bayes, LightGBM, and a TextCNN model blended with a Logistic Regression meta-learner
-- **Dream journal** — save, search, and filter entries by date, emotion, tags, or lucidity
-- **Analysis dashboard** — interactive charts (Plotly): emotion timeline, distribution pie, confidence trends, lucid-dream monthly breakdown
-- **Mood soundtrack** — auto-plays ambient music matched to the predicted emotion
-- **Dynamic theming** — app colour scheme adapts based on the last detected emotion
-- **t-SNE / KMeans cluster visualisation** — pre-computed cluster view of the training data
+Dreams can carry strong emotional signals, yet interpreting those signals is subjective and time-consuming. Dream Analyzer automates that process: users write a free-text description of their dream, and a trained ensemble of NLP models predicts the underlying emotion (e.g., *happy*, *sad*, *neutral*, *nightmare*). The app also maintains a personal dream journal, surfaces trend analytics over time, and plays ambient music that matches the detected mood, turning dream exploration into a rich, interactive experience.
 
 ---
 
-## 🛠 Tech Stack
+##  Key Features
+
+- **Emotion classification** - ensemble of Naive Bayes, LightGBM, and a TextCNN model blended with a Logistic Regression meta-learner
+- **Dream journal** - save, search, and filter entries by date, emotion, tags, or lucidity
+- **Analysis dashboard** - interactive charts (Plotly): emotion timeline, distribution pie, confidence trends, lucid-dream monthly breakdown
+- **Mood soundtrack** - auto-plays ambient music matched to the predicted emotion
+- **Dynamic theming** - app colour scheme adapts based on the last detected emotion
+- **t-SNE / KMeans cluster visualisation** - pre-computed cluster view of the training data
+
+---
+
+##  Tech Stack
 
 | Layer | Tools |
 |---|---|
@@ -36,7 +36,7 @@ Dreams can carry strong emotional signals, yet interpreting those signals is sub
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 Dream-Analyzer/
@@ -64,7 +64,7 @@ Dream-Analyzer/
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 ### 1. Clone the repository
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Run the Streamlit web app
 
@@ -149,7 +149,7 @@ Open any of the following:
 
 ---
 
-## 🤖 Model / NLP Pipeline Summary
+##  Model / NLP Pipeline Summary
 
 ### Dataset
 
@@ -192,7 +192,7 @@ The training notebooks include:
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 | Item | Default | Notes |
 |---|---|---|
@@ -206,31 +206,5 @@ No environment variables or secrets are required to run the application.
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! To contribute:
 
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and add relevant tests or notebook examples.
-4. Commit with a clear message: `git commit -m "Add: description of change"`
-5. Push to your fork and open a Pull Request against `main`.
-
-Please keep pull requests focused and describe the motivation clearly in the PR description.
-
----
-
-## 📄 License
-
-No license file is currently present in this repository. All rights are reserved by the author(s) unless otherwise stated. If you intend to use or build on this code, please contact the repository owner for permission.
-
----
-
-## 🙏 Acknowledgements
-
-- Dream text data sourced and labelled for emotion classification (see `dreams_labeled_balanced.csv`)
-- [Streamlit](https://streamlit.io/) for the rapid web-app framework
-- [PyTorch](https://pytorch.org/) for the deep learning infrastructure
-- [LightGBM](https://lightgbm.readthedocs.io/) for the gradient-boosting classifier
-- [Plotly](https://plotly.com/python/) for interactive visualisations
-- The open-source Python data-science ecosystem (NumPy, Pandas, Scikit-learn)
